@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/zPwwV9B/js.png",
+      "name": "JavaScript"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/B3jDwrL/react.png",
+      "name": "React"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/dBM2j7f/nodejs.png",
+      "name": "Node.js"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/BCjqSq5/mongo.png",
+      "name": "MongoDB"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/jGTw6yX/tailwind.png",
+      "name": "Tailwind-css"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/bvxD5ns/firebase-2.png",
+      "name": "Firebase"
+    }
+  ]
+  

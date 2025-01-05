@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+
+  .playfair-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+ 
+  
+  
+  
+  
