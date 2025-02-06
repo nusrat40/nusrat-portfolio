@@ -1,28 +1,40 @@
-import resume from "../../public/nusrat_jahan.pdf";
+import resume from "../assets/nusrat_jahan.pdf";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const links = (
+  
     <>
-      <li className="hover:text-[#ec5b53]">
-        <a href="#home">Home</a>
-      </li>
-      <li className="hover:text-[#ec5b53] ">
-        <a href="#about">About</a>
-      </li>
-      <li className="hover:text-[#ec5b53]">
-        <a href="#resume">Resume</a>
-      </li>
-      <li className="hover:text-[#ec5b53]">
-        <a href="#projects">Projects</a>
-      </li>
-      <li className="hover:text-[#ec5b53]">
-        <a href="#contact">Contact</a>
-      </li>
-    </>
+    <li className="hover:text-[#ec5b53]">
+      <Link to="home" smooth={true} duration={800}>
+        Home
+      </Link>
+    </li>
+    <li className="hover:text-[#ec5b53]">
+      <Link to="about" smooth={true} duration={800}>
+        About
+      </Link>
+    </li>
+    <li className="hover:text-[#ec5b53]">
+      <Link to="resume" smooth={true} duration={800}>
+        Resume
+      </Link>
+    </li>
+    <li className="hover:text-[#ec5b53]">
+      <Link to="projects" smooth={true} duration={800}>
+        Projects
+      </Link>
+    </li>
+    <li className="hover:text-[#ec5b53]">
+      <Link to="contact" smooth={true} duration={800}>
+        Contact
+      </Link>
+    </li>
+  </>
   );
 
   return (
-    <div className="navbar fixed z-10 bg-opacity-90 bg-[#fefafa] open-sans container mx-auto md:px-20">
+    <div className="navbar fixed z-10 bg-opacity-100 bg-[#fefafa] open-sans container mx-auto md:px-20">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

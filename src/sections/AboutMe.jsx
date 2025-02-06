@@ -1,19 +1,39 @@
-import aboutMe from "../assets/aboutMe.jpg";
+import { motion } from "framer-motion";
+import myPic from '../assets/pic.jpg';
 
 const AboutMe = () => {
   return (
     <div id="about" className="container mx-auto md:px-20 mb-16 space-y-7">
-      <h2 className="text-4xl font-bold text-[#002d5b] playfair-display text-center">
+      <motion.h2 
+        className="text-4xl font-bold text-[#002d5b] playfair-display text-center"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         About Me
-      </h2>
-      <p className="text-center text-xl w-2/3 mx-auto open-sans">
+      </motion.h2>
+
+      <motion.p
+        className="text-center text-xl w-2/3 mx-auto open-sans"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         I'm Nusrat Jahan, a Computer Science student. Currently, I am pursuing
-        my academic journey at Mawlana Bhashani Science and Technology
-        University.
-      </p>
+        my academic journey at Mawlana Bhashani Science and Technology University.
+      </motion.p>
 
       <div className="lg:flex gap-6 space-y-4 md:space-y-0 p-4 md:p-0">
-        <div className="open-sans space-y-3 flex flex-col justify-center items-center">
+        {/* Left Text Content */}
+        <motion.div
+          className="open-sans space-y-3 flex flex-col justify-center items-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <p>
             My journey into development began after I was admitted to
             university, where I discovered my love for programming. Initially, I
@@ -40,12 +60,23 @@ const AboutMe = () => {
             I believe that every line of code can make a difference, and I'm
             excited to contribute to the tech community.
           </p>
-        </div>
+        </motion.div>
 
-       <div className="relative">
-        <div className=" w-[450px] h-[400px] rounded-xl bg-[#ec5b53]"></div>
-       <img className="absolute top-3 right-4 w-[450px] h-[400px] rounded-xl" src={aboutMe} alt="" />
-       </div>
+        {/* Right Image Content */}
+        <motion.div
+          className="relative"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <div className="hidden lg:flex w-[400px] h-[450px] rounded-xl bg-[#ec5b53]"></div>
+          <img 
+            className="lg:absolute top-3 right-4 w-[400px] h-[450px] rounded-xl" 
+            src={myPic} 
+            alt="Profile" 
+          />
+        </motion.div>
       </div>
     </div>
   );

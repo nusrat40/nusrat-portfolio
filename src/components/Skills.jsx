@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 
+
 const Skills = () => {
   const [Skills, setSkills] = useState([]);
 
@@ -23,8 +24,8 @@ const Skills = () => {
                 {
                     Skills.map(skill => 
                         <div key={skill.id} className="ml-20 space-y-2">
-                            <img src={skill.image} className="w-50px]" alt="" />
-                            <p className="font-semibold">{skill.name}</p>
+                            <img src={skill.image} className="w-[80px]" alt="" />
+                            <p className="font-semibold text-center">{skill.name}</p>
 
                         
                         </div>

@@ -1,6 +1,21 @@
 [
     {
       "id": 1,
+      "name": "Study Platform",
+      "photo": "https://i.ibb.co.com/tTNBqSN1/Screenshot-2025-02-05-234007.png",
+      "description": "iLearning, an innovative platform designed for tutors and learners to enhance their education journey. The platform offers seamless study session management, interactive learning, and a feature-rich dashboard for tutors and students",
+      "liveLink": "https://study-platform-a9b9a.web.app/",
+      "githubLink": "https://github.com/nusrat40/study-platform?tab=readme-ov-file",
+      "features": [
+        "Interactive Learning",
+        " Study Session Management ",
+        "Secure Payments", 
+        "Feature-Rich Dashboard",
+        "Real-Time Notifications"
+      ]
+    },
+    {
+      "id": 2,
       "name": "Volunteer Management",
       "photo": "https://i.ibb.co.com/x5j4M0w/Screenshot-2025-01-04-235520.png",
       "description": "A web application designed to facilitate volunteer management by allowing users to request and organize volunteer opportunities efficiently.",
@@ -15,7 +30,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Game Zone",
       "photo": "https://i.ibb.co.com/zJwvtZ9/Screenshot-2025-01-04-235703.png",
       "description": "A web application for gamers to explore reviews of exciting games, manage a personalized watchlist, and get detailed insights about their favorite games.",
@@ -27,21 +42,6 @@
         "Interactive Alerts",
         "Sort Functionality",
         "Filtering by genre"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Coupon Mart",
-      "photo": "https://i.ibb.co.com/ChWjy8K/Screenshot-2025-01-04-235813.png",
-      "description": "This project is a simple Coupon Collecting Application designed to help users easily find and use discount coupons for popular e-commerce shops.",
-      "liveLink": "https://coupon-mart-d7fca.web.app/",
-      "githubLink": "https://github.com/nusrat40/coupon-mart",
-      "features": [
-        "Show brand details dynamically",
-        "Create user using firebase authentication process",
-        "Using react toastify",
-        "User authenticates with Google",
-        "Password validation and password toggling"
       ]
     }
   ]

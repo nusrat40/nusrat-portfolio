@@ -1,9 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-[#002d5b] playfair-display  mb-8">
+      <motion.div
+          className="open-sans space-y-3 flex flex-col justify-center items-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+
+<h2 className="text-2xl font-bold text-[#002d5b] playfair-display  mb-8">
         My Education
       </h2>
 
@@ -36,6 +45,9 @@ const Education = () => {
           </p>
         </div>
       </div>
+
+        </motion.div>
+   
     </div>
   );
 };
